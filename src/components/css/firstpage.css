@@ -6,28 +6,30 @@
 }
 
 .firstpage-navbar {
-    height: 70px !important;
-    min-height: 60px !important;
-    max-height: 70px !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    max-height: 50px !important;
     display: flex;
     box-sizing: border-box;
     padding: 0 16px;
     width: 100%;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
     white-space: nowrap;
     color: white;
-
+    border-bottom: 0.02px solid #000000;
 }
 
 .firstpage-logo{
-    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     box-sizing: border-box;
-    margin: 0 40px;
+    padding:0 16px;
 }
 
 .firstpage-logo img{
-    height: 40px;
+    height: 30px;
     /* width: 108px; */
     line-height: 0;
     max-width: 100%;
@@ -36,9 +38,8 @@
 .firstpage-navbar-button{
     background-color: inherit;
     color:inherit;
-    height: 70px;
+    height: 50px;
     padding: 0 20px;
-
     box-sizing: border-box;
     position: relative;
     cursor: pointer;
@@ -51,13 +52,13 @@
     vertical-align: baseline;
     text-align: center;
     margin: 0;
-    margin-right: 0px;
     min-width: 88px;
     line-height: 36px;
     padding: 0 16px;
     overflow: visible;
     font-weight: 900;
-    font-size: 18px;
+    font-family: 'Bree Serif';
+    font-size: 14px;
 }
 
 .firstpage-navbar-button:hover{
@@ -80,13 +81,13 @@
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     align-content: flex-start;
     flex-wrap: wrap;
 }
 
 .aboutus-card{
-    margin: 10px;
+    margin:5px 15px;
     padding: 10px;
     align-content: center;
     display: flex;

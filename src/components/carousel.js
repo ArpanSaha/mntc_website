@@ -1,13 +1,19 @@
 import React,{ Component } from 'react';
 import Carousel from 'nuka-carousel';
 import './css/carousel.css';
+import $ from 'jquery';
 
 export default class extends React.Component {
+    scrollfunc(){
+        $('html, body').animate({
+            scrollTop: $("#aboutus").offset().top
+        }, 2000);  
+    }
     render() {
         let carouselItems = [
             {
                 'name': '1.jpg',
-                'caption': "Image 1"
+                'caption': "Maths Moments Magic"
             },
             {
                 'name': '2.jpg',
@@ -31,9 +37,25 @@ export default class extends React.Component {
             )}
         >
             {carouselItems.map((item, index) => (
+<<<<<<< HEAD
                 <div className="image-cont" key={index}>
                     <img src={"assets/" + item.name} />
                     <p className="image-desc">{item.caption}</p>
+=======
+                <div className="slider-container" key={index}>
+                    <div className="image-container">
+                        <img src={"assets/" + item.name} />
+                    </div>
+                    <div className="black-wrapper">
+                        <div className="image-desc-container">
+                            <p>{item.caption}</p>
+                            <button >
+                            <i class="far fa-arrow-alt-down" onClick={this.scrollfunc}></i>
+                            </button>
+                        </div>
+                    </div>
+
+>>>>>>> 60f955ba... Event Page updated
                 </div>
             ))}
         </Carousel>

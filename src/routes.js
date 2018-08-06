@@ -18,7 +18,16 @@ export default ()=>(
                     <Footer />
                 </div>
             )} />
+<<<<<<< HEAD
             <Route path='/event' exact render={()=>( 
+=======
+            <Route path='/aboutus' exact render={()=>( 
+                <div>
+                    <FirstPage />
+                </div>
+            )} />
+            <Route path='/events' exact render={()=>( 
+>>>>>>> 60f955ba... Event Page updated
                 <div>
                     <Header />
                     <Events />

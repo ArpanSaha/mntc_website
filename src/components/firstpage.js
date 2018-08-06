@@ -3,33 +3,65 @@ import './css/firstpage.css';
 import logo from '../static/images/mntc.png';
 import Carousel from './carousel';
 import AOS from 'aos'
+import $ from 'jquery'
 
 // function goToUrl(){
 //     window.location = '/team';
 // }
 
 class FirstPage extends Component {
-    x
+    constructor(props) {
+        super(props);
+        // $(document).on('scroll', function() {
+        //     let offset = 30;
+        //     // if
+        //     // else if ($(window).scrollTop() >  $('#first').top - offset) {
+        //     //     
+        //     // }
+        //     var v=$(window).scrollTop();
+        //     if(v>offset && v<40)
+        //     {
+                // $('html, body').animate({
+                //     scrollTop: $("#aboutus").offset().top
+                // }, 2000);        
+        //         // $(window).scroll($('#aboutus').top);    
+        //     }
+        // });
+    }
+    scrollfunc(){
+
+    }
     render(){
         AOS.init({
             duration : 3000
         }
         );
-        let NavbarItems = [
+        let NavbarItemsLeft = [
             {
-                'name': 'AboutUs'
+                'name': 'AboutUs',
+                'loc' : 'aboutus'
             },
             {
-                'name': 'Events'
+                'name': 'Events',
+                'loc' : 'events'
             },
             {
-                'name': 'Members'
+                'name': 'Team',
+                'loc' : 'team'
+            }
+        ]
+        let NavbarItemsRight = [
+            {
+                'name': 'Aavishkar',
+                'loc' : 'aavishkar'
             },
             {
-                'name': 'Aavishkar'
+                'name': 'Anveshan',
+                'loc' : 'anveshan'
             },
             {
-                'name': 'Anveshan' 
+                'name': 'Anveshan',
+                'loc' : 'anveshan'
             }
         ]
         let contents=[
@@ -50,12 +82,31 @@ class FirstPage extends Component {
             <div>
                 <div className="firstpage-header">
                     <div className="firstpage-navbar">
+                        <div className='buttons_group'>
+                            {NavbarItemsLeft.map((item, index) =>(
+                                <button
+                                    className="firstpage-navbar-button"
+                                    key={index} 
+                                    onClick={() => {window.location.href='/'+item.loc}}
+                                >
+                                    <span>
+                                        <div>
+                                            <span>{item.name}</span>
+                                        </div>
+                                    </span>
+                                </button>
+                            ))}
+                        </div>
                         <a className="firstpage-logo" href="/">
                             <img src={logo}/>    
                         </a> 
                         <div className='buttons_group'>
-                            {NavbarItems.map((item, index) =>(
-                                <button className="firstpage-navbar-button" key={index} >
+                            {NavbarItemsRight.map((item, index) =>(
+                                <button
+                                    className="firstpage-navbar-button"
+                                    key={index} 
+                                    onClick={() => {window.location.href='/'+item.loc}}
+                                >
                                     <span>
                                         <div>
                                             <span>{item.name}</span>
@@ -67,7 +118,7 @@ class FirstPage extends Component {
                     </div>
                 </div>
                 <Carousel />
-                <div className="aboutus">
+                <div className="aboutus" id='aboutus'>
                     <h1>About Us</h1>
                     <div data-aos='fade-up' className='aboutus-desc'>
                         {contents.map((item, index) =>(

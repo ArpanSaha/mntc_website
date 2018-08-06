@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
-import './css/events.css';
 import './css/body.css';
+import './css/events.css';
 
 class Event extends Component{
     render(){
@@ -38,21 +38,18 @@ class Event extends Component{
         ]
         return(
             <div className='site_body'>
-                <h1> Events Page </h1>
-                {
-                    flagshipEvents.map((item,index)=>(
-                        <div className='event_card' key={index}>
-                            <div className='event_desc'>
-                                <h1>{item.name}</h1>
-                                <p>{item.desc}</p>
-                            </div>
-                            <div className='event_image'>
-                                <img src={item.src} />
-                            </div>
+                {flagshipEvents.map((item,index)=>(
+                    <div className={index%2==0?'blog-card':'blog-card alt'} key={index}>
+                        <div className="meta">
+                            <div className="photo" style={{'background-image': 'url('+item.src+')'}}></div>
                         </div>
-                    ))
-                }
-                
+                        <div className="description">
+                            <h1>{item.name}</h1>
+                            <h2>Opening a door to the future</h2>
+                            <p> {item.desc}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         );
     }
