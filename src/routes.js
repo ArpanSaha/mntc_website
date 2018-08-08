@@ -19,15 +19,24 @@ export default ()=>(
                 </div>
             )} />
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Route path='/event' exact render={()=>( 
 =======
+=======
+
+>>>>>>> 8280817b... Event page updated
             <Route path='/aboutus' exact render={()=>( 
                 <div>
                     <FirstPage />
                 </div>
             )} />
+<<<<<<< HEAD
             <Route path='/events' exact render={()=>( 
 >>>>>>> 60f955ba... Event Page updated
+=======
+
+            <Route path='/event' exact render={()=>( 
+>>>>>>> 8280817b... Event page updated
                 <div>
                     <Header />
                     <Events />

@@ -38,10 +38,14 @@ export default class extends React.Component {
         >
             {carouselItems.map((item, index) => (
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <div className="image-cont" key={index}>
                     <img src={"assets/" + item.name} />
                     <p className="image-desc">{item.caption}</p>
 =======
+=======
+
+>>>>>>> 8280817b... Event page updated
                 <div className="slider-container" key={index}>
                     <div className="image-container">
                         <img src={"assets/" + item.name} />
@@ -54,8 +58,11 @@ export default class extends React.Component {
                             </button>
                         </div>
                     </div>
+<<<<<<< HEAD
 
 >>>>>>> 60f955ba... Event Page updated
+=======
+>>>>>>> 8280817b... Event page updated
                 </div>
             ))}
         </Carousel>
