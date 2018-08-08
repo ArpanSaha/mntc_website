@@ -13,3 +13,6 @@ body {
   background-color: rgb(58, 57, 57);
   -webkit-text-size-adjust: 100%;
 }
+.full-vh {
+  height: 134vh;
+}
