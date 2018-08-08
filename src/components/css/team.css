@@ -1,43 +1,99 @@
-.member_card{
-    width: 200px;
-    height: 280px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: aquamarine;
-    color: black;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    font-family: Roboto;
-}
-
-.card_image{
-    height:200px;
-    width: 200px;
+.card-image{
+    height:120px;
+    width: 120px;
     align-content: center;
     overflow: hidden;
 }
-.card_image > img{
+.card-image > img{
     height: auto;
     width: 100%;
 }
-.member_card > h1{
-    font-size: 14px;
+.card-info> h1{
+    font-size: 18px;
     font-weight: 900;
-    padding:1px 1px;
     text-decoration: none;
     text-align: center;
-    display: block;
     margin:0 auto;
+    line-height: 15px;
     overflow-wrap:break-word;
 }
+.card-info> p{
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  margin:0 auto;
+  line-height: 15px;
+  overflow-wrap:break-word;
+}
 
-.member_card > h2{
-    font-size: 12px;
-    padding:1px 1px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    margin:0 auto;
-    overflow-wrap:break-word;
+
+
+/* Newly Added */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+
+.member-card {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: Roboto;
+}
+
+.member-card .color-overlay {
+  /* Rectangle 11: */
+  background: rgba(84, 104, 110, 0.2);
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+.member-card .gradient-overlay {
+  /* bg-gradient: */
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index:50;
+}
+.member-card:hover .card-info {
+  opacity: 1;
+  bottom: 30px;
+}
+.member-card:hover .color-overlay {
+  background: rgba(84, 104, 110, 0.8);
+}
+
+.card-info {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 5px;
+  color: #DCE3E7;
+  font-family: 'Droid Serif', serif;
+  font-style: 12px;
+  line-height: 24px;
+  z-index: 100;
+  opacity: 0;
+  text-align: center;
+  transition: bottom 0.3s, opacity 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
 }

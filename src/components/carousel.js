@@ -17,7 +17,7 @@ export default class extends React.Component {
             },
             {
                 'name': '2.jpg',
-                'caption': "Image 2"
+                'caption': "Instilling rational and logical thinking in inquisitive minds."
             },
             {
                 'name': '4.jpg',

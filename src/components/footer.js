@@ -31,12 +31,12 @@ class Footer extends Component{
             }
         ]
         return(
-            <div className='site_footer'>
+            <div className='site-footer'>
                 <img src={logo} title='mntc'/>
-                <div className='footer_info'>
+                <div className='footer-info'>
                     <p>Stay Connected</p>
                     
-                    <div className='social_icons'>      
+                    <div className='social-icons'>      
                         <div style={{'display':'flex','margin':'0 auto'}}>                 
                         {socialSites.map((items, index) =>(
                             <div className='icon' key={index} >
@@ -49,7 +49,7 @@ class Footer extends Component{
                     </div>
                 </div>
                 <hr/>
-                <p className='credit_text'>Developed by tantrojan &#9400;</p>
+                <p className='credit-text'>Developed by tantrojan &#9400;</p>
             </div>
         );
     }

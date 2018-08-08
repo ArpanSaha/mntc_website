@@ -4,6 +4,7 @@ import logo from '../static/images/mntc.png';
 import Carousel from './carousel';
 import AOS from 'aos'
 import $ from 'jquery'
+import Footer from './footer';
 
 // function goToUrl(){
 //     window.location = '/team';
@@ -118,7 +119,7 @@ class FirstPage extends Component {
                     </div>
                 </div>
                 <Carousel />
-                <div className="aboutus" id='aboutus'>
+                <div className="site-body" id='aboutus'>
                     <h1>About Us</h1>
                     <div data-aos='fade-up' className='aboutus-desc'>
                         {contents.map((item, index) =>(
@@ -129,6 +130,7 @@ class FirstPage extends Component {
                         ))}
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }

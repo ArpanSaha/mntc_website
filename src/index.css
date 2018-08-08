@@ -1,5 +1,6 @@
  @import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto'); 
  @import url('https://fonts.googleapis.com/css?family=Lobster|Rubik|Bree+Serif');
+ @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 body {
   height: 100%;
@@ -10,9 +11,35 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto' ,sans-serif;
   font-size: 14px;
-  background-color: rgb(58, 57, 57);
+  columns: #000000;
+  background-image: url("./static/images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color:#ffffff; */
   -webkit-text-size-adjust: 100%;
 }
 .full-vh {
   height: 134vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.site-body{
+  width:90%;
+  margin: 0 auto;
+  display: block;
+  align-content: center;
+  text-align: center;
+  overflow: auto;
+  min-height:100vh;
+  padding-top: 70px;
+}
+
+h1{
+  font-size: 30px;
+  padding:10px 0;
 }

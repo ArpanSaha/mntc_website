@@ -66,22 +66,12 @@
     border-bottom: 3px solid #239ab4;
     padding-top: 3px;
 }
-.aboutus{
-    background-color: aliceblue;
-    padding-top: 70px;
-    position:relative;
-    display: block;
-    width:100%;
-    min-height:100vh;
-    margin: 0 auto;
-    text-align: center;
-}
 
 .aboutus-desc{
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     align-content: flex-start;
     flex-wrap: wrap;
 }
@@ -92,8 +82,17 @@
     align-content: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width:200px;
+    text-align: justify;
+    width:300px;
+}
+
+.aboutus-card > h1{
+    font-family: Rubik;
+}
+
+.aboutus-card > p{
+    font-family: 'Dancing Script';
+    font-size: 20px;
 }
 
 /* @media only screen and (max-width: 830px) {

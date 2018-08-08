@@ -37,7 +37,7 @@ class Event extends Component{
             // }
         ]
         return(
-            <div className='site_body'>
+            <div className='site-body'>
                 {flagshipEvents.map((item,index)=>(
                     <div className={index%2==0?'blog-card':'blog-card alt'} key={index}>
                         <div className="meta">
