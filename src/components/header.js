@@ -35,8 +35,8 @@ class Header extends Component {
                 'loc' : 'anveshan'
             },
             {
-                'name': 'Anveshan',
-                'loc' : 'anveshan'
+                'name': 'Contact Us',
+                'loc' : 'contactus'
             }
         ]
         let contents=[

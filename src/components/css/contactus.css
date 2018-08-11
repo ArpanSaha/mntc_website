@@ -1,0 +1,35 @@
+.contactcard-holders{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contactcard{
+    display: flex;
+    width:300px;
+    height: 120px;
+    margin: 2px 10px;
+    background-color: black;
+    border-radius:5px;
+    border-right: 20px solid aquamarine;
+}
+
+.contactphoto{
+    width:100px;
+}
+
+.contactinfo{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding:20px 10px;
+    align-items: flex-start;
+    font-family: "Bree Serif";
+    font-size: 14px;
+    color: aliceblue;
+    border-right:8px solid black;
+}
+.contactinfo > .post{
+    font-size: 16px;
+    font-weight: 600;
+}

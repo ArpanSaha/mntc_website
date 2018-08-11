@@ -13,21 +13,6 @@ import Footer from './footer';
 class FirstPage extends Component {
     constructor(props) {
         super(props);
-        // $(document).on('scroll', function() {
-        //     let offset = 30;
-        //     // if
-        //     // else if ($(window).scrollTop() >  $('#first').top - offset) {
-        //     //     
-        //     // }
-        //     var v=$(window).scrollTop();
-        //     if(v>offset && v<40)
-        //     {
-                // $('html, body').animate({
-                //     scrollTop: $("#aboutus").offset().top
-                // }, 2000);        
-        //         // $(window).scroll($('#aboutus').top);    
-        //     }
-        // });
     }
     scrollfunc(){
 
@@ -61,8 +46,8 @@ class FirstPage extends Component {
                 'loc' : 'anveshan'
             },
             {
-                'name': 'Anveshan',
-                'loc' : 'anveshan'
+                'name': 'Contact Us',
+                'loc' : 'contactus'
             }
         ]
         let contents=[

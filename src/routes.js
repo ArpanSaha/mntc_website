@@ -8,16 +8,14 @@ import Events from './components/events';
 import Team from './components/team';
 import FirstPage from './components/firstpage';
 import Aavishkar from './components/aavishkar';
+import ContactUs from "./components/contactus";
 
 export default ()=>(
     <BrowserRouter>
         <Switch>
             <Route path='/' exact render={()=>( 
                 <div>
-                    <Header />
-                    <Carousel />
-                    <Body /> 
-                    <Footer />
+                    <FirstPage />
                 </div>
             )} />
             <Route path='/aboutus' exact render={()=>( 
@@ -43,6 +41,20 @@ export default ()=>(
                 <div>
                     <Header />
                     <Aavishkar />
+                    <Footer />
+                </div>
+            )} />
+            <Route path='/anveshan' exact render={()=>( 
+                <div>
+                    <Header />
+                    <Aavishkar />
+                    <Footer />
+                </div>
+            )} />
+            <Route path='/contactus' exact render={()=>( 
+                <div>
+                    <Header />
+                    <ContactUs />
                     <Footer />
                 </div>
             )} />

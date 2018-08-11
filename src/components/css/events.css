@@ -189,6 +189,7 @@
 .event-toggle{
   display: flex;
   justify-content: center;
+  padding:5px;
 }
 .event-toggle>li{
   display: flex;
@@ -199,6 +200,9 @@
   text-decoration: none;
   color: #000;
   font-family: "Bree Serif";
+}
+.event-toggle>li>a:hover{
+  border-bottom:2px solid #000;
 }
 
 .event-toggle .active > a {

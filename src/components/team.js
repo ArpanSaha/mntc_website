@@ -3,6 +3,12 @@ import './css/body.css';
 import './css/team.css';
 
 class Team extends Component {
+    constructor(props){
+        super(props);
+        this.state = { 
+            active_menu: 'all'
+        }
+    }
     render(){
         let fourthYear=[
             {
@@ -170,6 +176,7 @@ class Team extends Component {
                 <h2>Fourth Year</h2>
                 <div className='card_holder'>
                     {
+                        
                         fourthYear.map((item, index) =>(
                             <div className="member-card" key={index}>
                                 <div className='card-image'>
