@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import AOS from 'aos';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App data-aos='fade' />, document.getElementById('root'));
 registerServiceWorker();

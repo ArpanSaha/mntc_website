@@ -21,7 +21,7 @@ class Event extends Component{
                 'value': "creativity"
             },
             {
-                'name': "Brain",
+                'name': "Brain Storming",
                 'value': "brain"
             },
             {

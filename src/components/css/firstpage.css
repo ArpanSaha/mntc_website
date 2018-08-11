@@ -3,6 +3,9 @@
     z-index: 1000;  
     width: 100%;
     margin: 0;
+    background: none;
+    background: linear-gradient(to top left, #ffffff00  0%,#00000000 82%);    
+    transition: all 1s;
 }
 
 .firstpage-navbar {
@@ -17,7 +20,6 @@
     justify-content: center;
     white-space: nowrap;
     color: white;
-    border-bottom: 0.02px solid #000000;
 }
 
 .firstpage-logo{
@@ -91,7 +93,7 @@
 }
 
 .aboutus-card > p{
-    font-family: 'Dancing Script';
+    font-family: 'Helvetica';
     font-size: 20px;
 }
 

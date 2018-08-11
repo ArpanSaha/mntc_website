@@ -1,11 +1,8 @@
 import React,{ Component } from 'react';
 import './css/header.css';
-import { Redirect } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import logo from '../static/images/mntc.png';
 
-// function goToUrl(){
-//     window.location = '/team';
-// }
 
 class Header extends Component {
 
@@ -54,14 +51,14 @@ class Header extends Component {
             }
         ]
         return(
-            <div className="firstpage-header">
-                <div className="firstpage-navbar">
+            <div className="page-header">
+                <div className="page-navbar">
                     <div className='buttons_group'>
                         {NavbarItemsLeft.map((item, index) =>(
                             <button
-                                className="firstpage-navbar-button"
+                                className="page-navbar-button"
                                 key={index} 
-                                onClick={() => {window.location.href='/'+item.loc}}
+                                onClick={() => {this.props.history.push('/'+item.loc)}}
                             >
                                 <span>
                                     <div>
@@ -71,15 +68,15 @@ class Header extends Component {
                             </button>
                         ))}
                     </div>
-                    <a className="firstpage-logo" href="/">
+                    <a className="page-logo" href="/">
                         <img src={logo}/>    
                     </a> 
                     <div className='buttons_group'>
                         {NavbarItemsRight.map((item, index) =>(
                             <button
-                                className="firstpage-navbar-button"
+                                className="page-navbar-button"
                                 key={index} 
-                                onClick={() => {window.location.href='/'+item.loc}}
+                                onClick={() => {this.props.history.push('/'+item.loc)}}
                             >
                                 <span>
                                     <div>
@@ -95,4 +92,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default withRouter(Header);

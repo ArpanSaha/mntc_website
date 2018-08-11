@@ -1,22 +1,44 @@
 import React,{ Component } from 'react';
 import './css/firstpage.css';
+import './css/header.css';
+import { withRouter } from 'react-router-dom';
 import logo from '../static/images/mntc.png';
 import Carousel from './carousel';
 import AOS from 'aos'
 import $ from 'jquery'
 import Footer from './footer';
 
-// function goToUrl(){
-//     window.location = '/team';
-// }
-
 class FirstPage extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            headerClass : 'firstpage-header'
+        }
     }
-    scrollfunc(){
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
 
+    handleScroll = (e) => {
+
+        if(window.scrollY>650)
+        {
+            this.setState({
+                headerClass : 'page-header'
+            })
+        }
+        else
+        {
+            this.setState({
+                headerClass : 'firstpage-header'
+            })
+        }
     }
+        
     render(){
         AOS.init({
             duration : 3000
@@ -66,14 +88,14 @@ class FirstPage extends Component {
         ]
         return(
             <div>
-                <div className="firstpage-header">
+                <div className={this.state.headerClass}>
                     <div className="firstpage-navbar">
                         <div className='buttons_group'>
                             {NavbarItemsLeft.map((item, index) =>(
                                 <button
                                     className="firstpage-navbar-button"
                                     key={index} 
-                                    onClick={() => {window.location.href='/'+item.loc}}
+                                    onClick={() => {this.props.history.push('/'+item.loc)}}
                                 >
                                     <span>
                                         <div>
@@ -91,7 +113,7 @@ class FirstPage extends Component {
                                 <button
                                     className="firstpage-navbar-button"
                                     key={index} 
-                                    onClick={() => {window.location.href='/'+item.loc}}
+                                    onClick={() => {this.props.history.push('/'+item.loc)}}
                                 >
                                     <span>
                                         <div>
@@ -104,7 +126,7 @@ class FirstPage extends Component {
                     </div>
                 </div>
                 <Carousel />
-                <div className="site-body" id='aboutus'>
+                <div className="site-body" id='about'>
                     <h1>About Us</h1>
                     <div data-aos='fade-up' className='aboutus-desc'>
                         {contents.map((item, index) =>(
@@ -121,4 +143,4 @@ class FirstPage extends Component {
     }
 }
 
-export default FirstPage;
+export default withRouter( FirstPage);

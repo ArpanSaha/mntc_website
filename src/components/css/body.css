@@ -13,5 +13,6 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    font-family: 'Bree Serif';
     /*justify-content: space-between;*/
 }

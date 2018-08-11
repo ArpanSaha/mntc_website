@@ -1,4 +1,5 @@
 import React,{ Component } from 'react';
+import AOS from 'aos';
 import './css/body.css';
 import './css/team.css';
 
@@ -6,179 +7,236 @@ class Team extends Component {
     constructor(props){
         super(props);
         this.state = { 
-            active_menu: 'all'
+            active_menu: 'fourth'
         }
     }
+    componentWillMount() {
+        this.menu = [
+            {
+                'name': "Office Bearers",
+                'value': "fourth"
+            },
+            {
+                'name': "Senior Fest Coordinators",
+                'value': "third"
+            },
+            {
+                'name': "Fest Coordinators",
+                'value': "second"
+            }
+        ]
+    }
     render(){
-        let fourthYear=[
+        let members=[
             {
                 'name':'Punit Drolia',
                 'post':'President',
-                'src': 'punit'
+                'src': 'punit',
+                'year': 'fourth'
             },
             {
                 'name':'Sahil Jaiswal',
                 'post':'Convener',
-                'src': 'sahil'
+                'src': 'sahil',
+                'year': 'fourth'
             },
             {
                 'name':'Nidhi Kumar Yadav',
                 'post':'General Secretary',
-                'src': 'nidhi'
+                'src': 'nidhi',
+                'year': 'fourth'
             },
             {
                 'name':'Sudipto Mukherjee',
                 'post':'Treasurer',
-                'src': 'sudipto'
+                'src': 'sudipto',
+                'year': 'fourth'
             },
             {
                 'name':'Srinjoy Banerjee',
                 'post':'Tech Head',
-                'src': 'srinjoy'
+                'src': 'srinjoy',
+                'year': 'fourth'
             },
             {
                 'name':'Afaque Alam',
                 'post':'Ankshala Head & ',
-                'src': 'afaque'
+                'src': 'afaque',
+                'year': 'fourth'
             },
             {
                 'name':'Utkarsh Jaiswal',
                 'post':'Assistant General Secretary',
-                'src': 'utkarsh'
+                'src': 'utkarsh',
+                'year': 'fourth'
             },
             {
                 'name':'Bhanu Prakash',
                 'post':'Sponsorship Head',
-                'src': 'bhanu'
+                'src': 'bhanu',
+                'year': 'fourth'
             },
             {
                 'name':'Shikha Kujur',
                 'post':'Web-D Head',
-                'src': 'shikha'
+                'src': 'shikha',
+                'year': 'fourth'
             },            
             {
                 'name':'Shivansh Kumar Dubey',
                 'post':'Logistics Head',
-                'src': 'shivansh'
+                'src': 'shivansh',
+                'year': 'fourth'
             },
             {
                 'name':'Shaista Ambreen',
                 'post':'Creative Head',
-                'src': 'shaista'
+                'src': 'shaista',
+                'year': 'fourth'
             },
             {
                 'name':'Vikas Kumar',
                 'post':'Publicity Head',
-                'src': 'vikas'
+                'src': 'vikas',
+                'year': 'fourth'
             },            
             {
                 'name':'Iimon Tarun Kataki',
                 'post':'Workshop Head',
-                'src': 'iimon'
+                'src': 'iimon',
+                'year': 'fourth'
             },
             {
                 'name':'Late Amit Kumar',
                 'post':'',
-                'src': 'amit'
+                'src': 'amit',
+                'year': 'fourth'
             },
             {
                 'name':'R. Likhith',
                 'post':'',
-                'src': 'likhith'
-            }
-        ]
-        let thirdYear=[
+                'src': 'likhith',
+                'year': 'fourth'
+            },
             {
                 'name':'Abhas Gorain',
-                'src': 'abhas'
+                'src': 'abhas',
+                'year': 'third'
             },
             {
                 'name':'Adrish Bir',
-                'src': 'adrish'
+                'src': 'adrish',
+                'year': 'third'
             },
             {
                 'name':'Anshul Thakur',
-                'src': 'anshul'
+                'src': 'anshul',
+                'year': 'third'
             },
             {
                 'name':'Avinash Boppudi',
-                'src': 'avinash'
+                'src': 'avinash',
+                'year': 'third'
             },
             {
                 'name':'Brijesh',
-                'src': 'brijesh'
+                'src': 'brijesh',
+                'year': 'third'
             },
             {
                 'name':'Dishant Bole',
-                'src': 'dishant'
+                'src': 'dishant',
+                'year': 'third'
             },
             {
                 'name':'Geeta Madhuri',
-                'src': 'geeta'
+                'src': 'geeta',
+                'year': 'third'
             },
             {
                 'name':'Hariharan',
-                'src': 'hariharan'
+                'src': 'hariharan',
+                'year': 'third'
             },
             {
                 'name':'Kuldeep Jangid',
-                'src': 'kuldeep'
+                'src': 'kuldeep',
+                'year': 'third'
             },
             {
                 'name':'Nikhil Murarka',
-                'src': 'nikhil'
+                'src': 'nikhil',
+                'year': 'third'
             },
             {
                 'name':'Piyush Jain',
-                'src': 'piyush'
+                'src': 'piyush',
+                'year': 'third'
             },
             {
                 'name':'Samriddhi Gupta',
-                'src': 'samriddhi'
+                'src': 'samriddhi',
+                'year': 'third'
             },
             {
                 'name':'Satantra Tiwari',
-                'src': 'satantra'
+                'src': 'satantra',
+                'year': 'third'
             },
             {
                 'name':'Sayanti Dey',
-                'src': 'sayanti'
+                'src': 'sayanti',
+                'year': 'third'
             },
             {
                 'name':'Shankar Ray',
-                'src': 'shankar'
+                'src': 'shankar',
+                'year': 'third'
             },
             {
                 'name':'Souman Pani',
-                'src': 'souman'
+                'src': 'souman',
+                'year': 'third'
             },
             {
                 'name':'Subhranshu Mohanty',
-                'src': 'subhranshu'
+                'src': 'subhranshu',
+                'year': 'third'
             },
             {
                 'name':'Tamal Choudhury',
-                'src': 'tamal'
+                'src': 'tamal',
+                'year': 'third'
             },
             {
                 'name':'Tanmoy Ghosh',
-                'src': 'tanmoy'
+                'src': 'tanmoy',
+                'year': 'third'
             },
             {
                 'name':'Vijaya Bhuvanagiri',
-                'src': 'vijaya'
+                'src': 'vijaya',
+                'year': 'third'
             }
         ]
+        AOS.init({
+            duration : 2000
+        });
         return(
             <div className='site-body'>
                 <h1>Our Team</h1>
                 <hr/>
-                <h2>Fourth Year</h2>
-                <div className='card_holder'>
+                <ul className="team-toggle">
+                        {this.menu.map((menu, index) => (
+                            <li className={ (menu.value === this.state.active_menu) ? "active" : null}>
+                                <a href="#" onClick={(e) => { e.preventDefault(); this.setState({ active_menu: menu.value }) }}>{menu.name}</a>
+                            </li>
+                        ))}
+                    </ul>
+                 <div className='card_holder'>
                     {
-                        
-                        fourthYear.map((item, index) =>(
-                            <div className="member-card" key={index}>
+                        members.map((item, index) =>(
+                            <div  className={(this.state.active_menu === item.year )?"member-card":"inactive-member-card"} key={index}>
                                 <div className='card-image'>
                                     <img src={"assets/team/" + item.src + ".jpg"} />
                                 </div>
@@ -186,25 +244,7 @@ class Team extends Component {
                                     <h1>{item.name}</h1>
                                     <p>{item.post}</p>
                                 </div>
-                                {/* Overlays */}
-                                <div class="gradient-overlay"></div>
-                                <div class="color-overlay"></div>       
-                            </div>
-                        ))
-                    }
-                </div>
-                <h2>Third Year</h2>
-                <div className='card_holder'>
-                    {
-                        thirdYear.map((item, index) =>(
-                            <div className="member-card" key={index}>
-                                <div className='card-image'>
-                                    <img src={"assets/team/" + item.src + ".jpg"} />
-                                </div>
-                                <div className="card-info">
-                                    <h1>{item.name}</h1>
-                                </div>
-                                {/* Overlays */}
+                               
                                 <div class="gradient-overlay"></div>
                                 <div class="color-overlay"></div>       
                             </div>
