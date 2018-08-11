@@ -1,3 +1,13 @@
+.contact-page{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-col{
+    width:300px;
+    font-family: "Bree Serif";
+}
+
 .contactcard-holders{
     display: flex;
     flex-wrap: wrap;
@@ -11,20 +21,28 @@
     margin: 2px 10px;
     background-color: black;
     border-radius:5px;
-    border-right: 20px solid aquamarine;
+    overflow: hidden;
+    border-right: 10px solid #239ab4;
+    box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.9);
 }
 
 .contactphoto{
-    width:100px;
+    width:130px;
+    display: flex;
+    transform-origin: bottom left;
+    align-items: center;
+    overflow: hidden;
 }
-
+.contactphoto > img {
+    height:100%;
+    width: auto;
+}
 .contactinfo{
-    width: 200px;
+    width: 170px;
     display: flex;
     flex-direction: column;
     padding:20px 10px;
     align-items: flex-start;
-    font-family: "Bree Serif";
     font-size: 14px;
     color: aliceblue;
     border-right:8px solid black;

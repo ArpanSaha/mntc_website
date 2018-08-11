@@ -11,41 +11,51 @@ class ContactUs extends Component{
                 'name':'Punit Drolia',
                 'post':'President',
                 'email':'punit.123@gmail.com',
-                'phone':'987543210'
+                'phone':'987543210',
+                'src':'punit'
             },
             {
-                'name':'Punit Drolia',
-                'post':'President',
-                'email':'punit.123@gmail.com',
-                'phone':'987543210'
+                'name':'Sahil Jaiswal',
+                'post':'Convenor',
+                'email':'sahil.123@gmail.com',
+                'phone':'987543210',
+                'src':'sahil'
             },
             {
-                'name':'Punit Drolia',
-                'post':'President',
-                'email':'punit.123@gmail.com',
-                'phone':'987543210'
+                'name':'Nidhi Kumar Yadav',
+                'post':'General Secretary',
+                'email':'nidhi.123@gmail.com',
+                'phone':'987543210',
+                'src':'nidhi'
             }
         ]
         return (
             <div className="site-body">
-                <div className="contact-page">
-                    <h1>Post Holders</h1>
-                    <div className="contactcard-holders">
-                        {postHolders.map((item,index)=>(
-                            <div className="contactcard">
-                                <div className='contactphoto'>
-                                    <img />
+                <h1> Contact US </h1>
+                <div className="contact-page">   
+                    <div className="contact-col">
+                        <div className="contactcard-holders">
+                            {postHolders.map((item,index)=>(
+                                <div className="contactcard">
+                                    <div className='contactphoto'>
+                                        <img src={"assets/team/" + item.src + ".jpg"}/>
+                                    </div>
+                                    <div className='contactinfo'>
+                                        <p>{item.name}</p>
+                                        <p className="post">{item.post}</p>
+                                        <p>{item.phone}</p>
+                                        <p>{item.email}</p>
+                                    </div>
                                 </div>
-                                <div className='contactinfo'>
-                                    <p>{item.name}</p>
-                                    <p className="post">{item.post}</p>
-                                    <p>{item.phone}</p>
-                                    <p>{item.email}</p>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                    <h1>Faculty Advisors</h1>
+                    <div className="contact-col">
+                    </div>
+                    <div className="contact-col">
+                    <p>Like our facebook page to stay updated</p>
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmathsntechclub%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style={{"border":"none", "overflow":"hidden"}} scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
                 </div>
             </div> 
         )
