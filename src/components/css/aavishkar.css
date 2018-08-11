@@ -1,0 +1,10 @@
+.fest{
+    border-radius: 2%;
+    width: 100%;
+    background: burlywood;
+    overflow: hidden;
+}
+
+.fest > video{
+    width: 100%;
+}

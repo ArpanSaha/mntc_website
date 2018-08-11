@@ -7,6 +7,7 @@ import Footer from './components/footer';
 import Events from './components/events';
 import Team from './components/team';
 import FirstPage from './components/firstpage';
+import Aavishkar from './components/aavishkar';
 
 export default ()=>(
     <BrowserRouter>
@@ -35,6 +36,13 @@ export default ()=>(
                 <div>
                     <Header />
                     <Team />
+                    <Footer />
+                </div>
+            )} />
+            <Route path='/aavishkar' exact render={()=>( 
+                <div>
+                    <Header />
+                    <Aavishkar />
                     <Footer />
                 </div>
             )} />
