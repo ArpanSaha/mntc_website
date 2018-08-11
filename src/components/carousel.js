@@ -13,7 +13,7 @@ export default class extends React.Component {
         let carouselItems = [
             {
                 'name': '1.jpg',
-                'caption': "Maths Moments Magic"
+                'caption': "Maths  Moments Magic"
             },
             {
                 'name': '2.jpg',
@@ -44,9 +44,6 @@ export default class extends React.Component {
                     <div className="black-wrapper">
                         <div className="image-desc-container">
                             <p>{item.caption}</p>
-                            <button >
-                            <i class="far fa-arrow-alt-down" onClick={this.scrollfunc}></i>
-                            </button>
                         </div>
                     </div>
 
