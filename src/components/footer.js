@@ -7,6 +7,12 @@ import instagram from '../static/images/instagram.png';
 import gmail from '../static/images/google-plus.png';
 
 class Footer extends Component{
+    constructor(props){
+        super(props);
+        this.state ={
+            footerClass : this.props.footerClass || 'site-footer'
+        }
+    }
     render(){
         var socialSites=[
             {
@@ -31,7 +37,7 @@ class Footer extends Component{
             }
         ]
         return(
-            <div className='site-footer'>
+            <div className={this.state.footerClass}>
                 <img src={logo} title='mntc'/>
                 <div className='footer-info'>
                     <p>Stay Connected</p>

@@ -69,32 +69,26 @@
     padding-top: 3px;
 }
 
-.aboutus-desc{
+.about-college-desc{
     display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    width: 100%;
-    align-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.aboutus-card{
-    margin:5px 15px;
-    padding: 10px;
-    align-content: center;
-    display: flex;
+    padding: 40px;
+    width: 50%;
+    height: 100%;
     flex-direction: column;
-    text-align: justify;
-    width:300px;
+    text-align: right;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Helvetica;
 }
+.about-club-desc{
+    display: flex;
+    /* padding: 20px; */
+    width: 100% ;
+    text-align: left;
+    height: 33%;
+    flex-direction: column;
 
-.aboutus-card > h1{
-    font-family: Rubik;
-}
-
-.aboutus-card > p{
-    font-family: 'Helvetica';
-    font-size: 20px;
 }
 
 /* @media only screen and (max-width: 830px) {
