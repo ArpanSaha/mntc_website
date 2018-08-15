@@ -88,7 +88,7 @@ class FirstPage extends Component {
         ]
         return(
             <div>
-                <div className={this.state.headerClass}>
+                <div data-aos="fade" className={this.state.headerClass}>
                     <div className="firstpage-navbar">
                         <div className='buttons_group'>
                             {NavbarItemsLeft.map((item, index) =>(
@@ -126,7 +126,7 @@ class FirstPage extends Component {
                     </div>
                 </div>
                 <Carousel />
-                <div className="site-body-full" style={{'background-image': 'url(/assets/about.jpeg)','background-repeat':'no-repeat','background-size':'cover'}} id='about'>
+                <div className="site-body-full" style={{'background-image': 'url(/assets/about.jpeg)','background-repeat':'no-repeat','background-size':'cover','background-position': 'fixed'}} id='about'>
                     {/* <h1>About Us</h1>
                     <div data-aos='fade-up' className='aboutus-desc'>
                         {contents.map((item, index) =>(
@@ -137,14 +137,14 @@ class FirstPage extends Component {
                         ))}
                     </div> */}
                     <div style={{ 'display' : 'flex', 'width' : '100%', 'height' : '100%'}}>
-                        <div className='about-college-desc'>
+                        <div data-aos="fade-right" className='about-college-desc'>
                             <h1>About Our college</h1>
                             <p>The National Institute of Technology, Durgapur (formerly Regional Engineering College, Durgapur), was established by an Act of Parliament in 1960 as one of the eight such colleges aimed to function as a pace setter for engineering education in the country and to foster national integration.It is a fully-funded premier Technological Institution of the Government of India and is administered by an autonomous Board of Governors.
 Somewhere near the modest dwelling of daily wage-earners and plodders, there lies a heaven in which resides the greatest minds of National Institute of Technology, Durgapur, the cradle of human intellect and knowledge, the confluence of various difficult times especially the naxalite uprising of 80's, NIT Durgapur has the steadfast support of its student and faculty, combined with infrastructure of institute facility.
 With precarious and careful laden mixture of youth and experience, old methods, new technologies, conventional stability and rebellious vivacity, NIT Durgapur poises to reach the pinnacle of glory and indeterminable heights of excellence.The never ending spirit and unquenchable thirst for knowledge that the institution stands for is symbolized in every success story of college. So come lets explore the spirits.
                             </p>
                         </div>
-                        <div className='about-college-desc'>
+                        <div data-aos="fade-left" className='about-college-desc'>
                             {contents.map((item, index) =>(
                                 <div className='about-club-desc'>
                                     <h1>{item.title}</h1>

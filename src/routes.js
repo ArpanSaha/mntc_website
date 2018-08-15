@@ -9,6 +9,7 @@ import Team from './components/team';
 import FirstPage from './components/firstpage';
 import Aavishkar from './components/aavishkar';
 import ContactUs from "./components/contactus";
+import Slider from "./components/slider";
 
 export default ()=>(
     <BrowserRouter>
@@ -56,6 +57,11 @@ export default ()=>(
                     <Header />
                     <ContactUs />
                     <Footer />
+                </div>
+            )} />
+            <Route path='/slider' exact render={()=>( 
+                <div>
+                    <Slider />
                 </div>
             )} />
         </Switch>
