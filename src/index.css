@@ -19,7 +19,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color :rgb(182, 195, 195);
+  background-color :azure;
   -webkit-text-size-adjust: 100%;
 }
 .full-vh {

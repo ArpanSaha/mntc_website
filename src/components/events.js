@@ -1,36 +1,29 @@
 import React,{ Component } from 'react';
 import './css/body.css';
 import './css/events.css';
-import AOS from 'aos'
+import Slider from './slider';
+import AOS from 'aos';
 
 class Event extends Component{
     constructor(props){
         super(props);
         this.state = { 
-            active_menu: 'all'
+            active_event: 'ankshala'
         }
     }
-    componentWillMount() {
-        this.menu = [
+    componentWillMount(){
+            this.eventToggle = [
             {
-                'name': "All",
-                'value': "all"
+                'name' : 'Ankshala',
+                'value' : 'ankshala'
             },
             {
-                'name': "Creativity",
-                'value': "creativity"
+                'name' : 'Knock Knock',
+                'value' : 'knock_knock'
             },
             {
-                'name': "Brain Storming",
-                'value': "brain"
-            },
-            {
-                'name': "Coding",
-                'value': "coding"
-            },
-            {
-                'name': "Title",
-                'value': "title"
+                'name' : 'Terrorist Takedown',
+                'value' : 'terrorist_takedown'
             }
         ]
     }
@@ -56,75 +49,27 @@ class Event extends Component{
                 'src':'/assets/4.jpg'
             }
         ]
-        let festEvents=[
-            {
-                'name': 'Clash Of Titans',
-                'desc': 'The Aavishkar Championship',
-                'type': ['title']
-            },
-            {
-                'name': 'Constructo',
-                'desc': 'Let your dreams come to life',
-                'type': ['creativity', 'brain']
-            },
-            {
-                'name': 'Kryptic',
-                'desc': 'Decipher the future',
-                'type': ['brain']
-            },
-            {
-                'name': 'Matrix',
-                'desc': 'Unleash the mathemagician in you',
-                'type': ['brain']
-            },
-            {
-                'name': 'Simplex',
-                'desc': 'Unleash the coder in you',
-                'type': ['coding']
-            },
-            {
-                'name': 'Terrorist Takedown',
-                'desc': 'The treasure Hunt',
-                'type': ['brain', 'title']
-            }
-        ]
         return(
-            <div className='site-body'>
-                <h1>Flagship Events</h1>
-                {flagshipEvents.map((item,index)=>(
-                    <div className={index%2==0?'blog-card':'blog-card alt'} key={index}>
-                        <div className="meta">
-                            <div className="photo" style={{'background-image': 'url('+item.src+')'}}></div>
+            <div className="site-body-full">
+                <div className="fullpage-event-toggler">
+                    <ul>
+                    <h3>Flagship Events</h3>    
+                    {this.eventToggle.map((item, index)=>(
+                        <li className={(item.value === this.state.active_event  )?'active':null}>{item.name}</li>
+                    ))}
+                    </ul>
+                </div>
+                {flagshipEvents.map((item, index)=>(
+                    <div className="fullpage-event-content" key={index}>
+                        <h1>{item.name}</h1>
+                        <div className="fullpage-event-slider">
+                            <Slider />
                         </div>
-                        <div className="description">
-                            <h1>{item.name}</h1>
-                            <h2>Opening a door to the future</h2>
-                            <p> {item.desc}</p>
+                        <div className="fullpage-event-desc">
+                            <p>{item.desc}</p>
                         </div>
                     </div>
                 ))}
-                <div>
-                    <h1>Events during Fest</h1>
-                    <ul className="event-toggle">
-                        {this.menu.map((menu, index) => (
-                            <li className={ (menu.value === this.state.active_menu) ? "active" : null}>
-                                <a href="#" onClick={(e) => { e.preventDefault(); this.setState({ active_menu: menu.value }) }}>{menu.name}</a>
-                            </li>
-                        ))}
-                    </ul>
-                    <div className="event-groups">
-                        {
-                            festEvents.map(( item,index ) => (
-                                item.type.indexOf(this.state.active_menu) !== -1 ? 
-                                <div className={item.type + " event-card-sm"} key={index}>
-                                    <h1>{item.name}</h1>
-                                    <p>{item.desc}</p>
-                                </div> :
-                                null
-                            ))
-                        }
-                    </div>
-                </div>
             </div>
 
         );
