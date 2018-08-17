@@ -2,12 +2,18 @@ import React,{ Component } from 'react';
 import './css/header.css';
 import { withRouter } from 'react-router-dom';
 import logo from '../static/images/mntc.png';
+import menu from '../static/images/menu.png';
 
 
 class Header extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            menuToggle : 'menu-expand-buttons-inactive'
+        }
+    }
 
-      render(){
-        
+    render(){    
         let NavbarItemsLeft = [
             {
                 'name': 'AboutUs',
@@ -85,6 +91,61 @@ class Header extends Component {
                                 </span>
                             </button>
                         ))}
+                    </div>
+                </div>
+                <div className="mobile-navbar">
+                    <a className="mobile-logo" href="/">
+                        <img src={logo}/>    
+                    </a>
+                    <a className="menu-button" href="#" 
+                        onClick={
+                            (e)=>{
+                                e.preventDefault(); 
+                                if (this.state.menuToggle === 'menu-expand-buttons-inactive')
+                                {
+                                    console.log('yes');
+                                    this.setState({
+                                        menuToggle : 'menu-expand-buttons-active'
+                                    })
+                                }
+                                else{
+                                    this.setState({
+                                        menuToggle : 'menu-expand-buttons-inactive'
+                                    })
+                                }
+                        }
+                    }>
+                        <img src={menu}/>
+                    </a>
+                    <div className={this.state.menuToggle}>
+                        <div className='mobile-buttons-group'>
+                            {NavbarItemsLeft.map((item, index) =>(
+                                <button
+                                    className="mobile-navbar-button"
+                                    key={index} 
+                                    onClick={() => {this.props.history.push('/'+item.loc); this.setState({menuToggle : 'menu-expand-buttons-inactive'});}}
+                                >
+                                    <span>
+                                        <div>
+                                            <span>{item.name}</span>
+                                        </div>
+                                    </span>
+                                </button>
+                            ))}
+                            {NavbarItemsRight.map((item, index) =>(
+                                <button
+                                    className="mobile-navbar-button"
+                                    key={index} 
+                                    onClick={() => {this.props.history.push('/'+item.loc); this.setState({menuToggle : 'menu-expand-buttons-inactive'});}}
+                                >
+                                    <span>
+                                        <div>
+                                            <span>{item.name}</span>
+                                        </div>
+                                    </span>
+                                </button>
+                            ))}
+                        </div> 
                     </div>
                 </div>
             </div>
