@@ -30,6 +30,7 @@
 .slider-toggler{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 .image-button {
