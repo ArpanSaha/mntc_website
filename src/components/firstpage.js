@@ -126,7 +126,7 @@ class FirstPage extends Component {
                     </div>
                 </div>
                 <Carousel />
-                <div className="site-body-full" style={{'background-image': 'url(/assets/about.jpeg)','background-repeat':'no-repeat','background-size':'cover','background-position': 'fixed'}} id='about'>
+                <div className="site-body-full" id='about'>
                     {/* <h1>About Us</h1>
                     <div data-aos='fade-up' className='aboutus-desc'>
                         {contents.map((item, index) =>(

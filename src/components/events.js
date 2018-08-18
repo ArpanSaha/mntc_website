@@ -81,7 +81,7 @@ class Event extends Component{
                     </ul>
                 </div>
                 {flagshipEvents.map((item, index)=>(
-                    <div className="fullpage-event-content" key={index} id={item.value}>
+                    <div data-aos="fade-in" className="fullpage-event-content" key={index} id={item.value}>
                         <h1>{item.name}</h1>
                         <div className="fullpage-event-slider">
                             <Slider />

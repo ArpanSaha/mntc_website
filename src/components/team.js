@@ -3,6 +3,7 @@ import AOS from 'aos';
 import './css/body.css';
 import './css/team.css';
 
+
 class Team extends Component {
     constructor(props){
         super(props);

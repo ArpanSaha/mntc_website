@@ -76,10 +76,7 @@
     height: 100%;
     flex-direction: column;
     text-align: right;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: Helvetica;
+    justify-content: center;    
 }
 .about-club-desc{
     display: flex;
