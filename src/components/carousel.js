@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import Carousel from 'nuka-carousel';
 import './css/carousel.css';
 import $ from 'jquery';
+import Particles from 'react-particles-js';
 
 export default class extends React.Component {
     scrollfunc(){
@@ -13,7 +14,7 @@ export default class extends React.Component {
         let carouselItems = [
             {
                 'name': '1.jpg',
-                'caption': "Maths  Moments Magic"
+                'caption': "Digging the Digits"
             },
             {
                 'name': '2.jpg',
@@ -26,8 +27,8 @@ export default class extends React.Component {
         ]
       return (
         <Carousel 
-            // autoplay="false" 
-            // autoplayInterval="1500" 
+            autoplay="false" 
+            autoplayInterval="2000" 
             wrapAround="true"
             renderCenterLeftControls={({ previousSlide }) => (
                 <i onClick={previousSlide} class="fa fa-chevron-left fa-2x"></i>
@@ -42,9 +43,19 @@ export default class extends React.Component {
                         <img src={"assets/" + item.name} />
                     </div>
                     <div className="black-wrapper">
+                        
                         <div className="image-desc-container">
                             <p>{item.caption}</p>
                         </div>
+                        <Particles 
+                            params={{
+                            particles: {
+                                number:{ 
+                                    value : 150
+                                }
+                            }
+                        }}
+                        />
                     </div>
 
                 </div>

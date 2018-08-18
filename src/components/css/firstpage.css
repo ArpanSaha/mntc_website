@@ -69,27 +69,58 @@
     padding-top: 3px;
 }
 
-.about-college-desc{
+.about-page{
     display: flex;
-    padding: 40px;
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-    text-align: right;
-    justify-content: center;    
+    width: 100%;
+    min-height: 100%;
+    flex-direction: row;
 }
-.about-club-desc{
-    display: flex;
-    /* padding: 20px; */
-    width: 100% ;
+
+.about-page-image{
+    width: 40%;
+    display: block;
+}
+
+.about-page-image > img {
+    width: 100%;
+}
+.about-page-content{
+    width:60%;
+    display: block;
     text-align: left;
-    height: 33%;
-    flex-direction: column;
-
+}
+.carousel {
+    display: block;
 }
 
-/* @media only screen and (max-width: 830px) {
-    .button_group{
-        display: inline-block;
+
+@media only screen and (max-width: 720px) {
+    .about-page-image{
+       display: none;
     }
-} */
+    .about-page-content{
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .carousel {
+        display: none;
+    }
+    .about-page{
+        flex-direction: column;
+    }
+    .about-page-image{
+        display: block;
+        width: 40%;
+        margin:0 auto;
+     }
+    .about-page-content{
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+}

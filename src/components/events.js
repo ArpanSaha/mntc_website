@@ -79,6 +79,9 @@ class Event extends Component{
                         </li>
                     ))}
                     </ul>
+                    <div className="click-more-events">
+                        <a href='/aavishkar'><h2>Click here for more events during fest</h2></a>
+                    </div>
                 </div>
                 {flagshipEvents.map((item, index)=>(
                     <div data-aos="fade-in" className="fullpage-event-content" key={index} id={item.value}>
