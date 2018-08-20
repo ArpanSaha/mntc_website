@@ -8,6 +8,7 @@ import Events from './components/events';
 import Team from './components/team';
 import FirstPage from './components/firstpage';
 import Aavishkar from './components/aavishkar';
+import Anveshan from './components/anveshan';
 import ContactUs from "./components/contactus";
 import Slider from "./components/slider";
 
@@ -48,7 +49,7 @@ export default ()=>(
             <Route path='/anveshan' exact render={()=>( 
                 <div>
                     <Header />
-                    <Aavishkar />
+                    <Anveshan />
                     <Footer />
                 </div>
             )} />
