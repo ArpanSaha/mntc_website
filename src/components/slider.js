@@ -55,13 +55,10 @@ class Slider extends Component {
     render(){
         return (
                 <div className="event-slider">
-                    {                        
-                        this.slideImages.map((item,index)=>(    
-                                <div className={(this.slideImages[this.state.activeImage].src === item.src)?'slider-image':'slider-image-inactive'} key={index}>
-                                    <img src={this.slideImages[this.state.activeImage].src}/>
-                                </div>
-                        ))
-                    } 
+    
+                    <div className='slider-image'>
+                        <img src={this.slideImages[this.state.activeImage].src}/>
+                    </div>
                     <div className='slider-toggler'>
                     {                        
                         this.slideImages.map((item,index)=>(    

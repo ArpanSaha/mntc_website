@@ -100,7 +100,7 @@ class FirstPage extends Component {
                 </div>
                 <div className="site-body" id='about'>
                     <div className='about-page' > 
-                        <div  data-aos="fade-right" className='about-page-image'>
+                        <div  data-aos="flip-right" className='about-page-image'>
                             <img src={about} />
                         </div>
                         <div data-aos="fade-left" className='about-page-content'>

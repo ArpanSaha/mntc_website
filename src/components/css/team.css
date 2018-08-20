@@ -136,7 +136,7 @@
 
 .team-toggle .active > a {
   color: #fff;
-  background: #000;
+  text-decoration: overline;
   padding:0 10px;
   border-radius: 5%;
 }

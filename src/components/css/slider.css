@@ -48,3 +48,8 @@
 	transform: scale(1.1);
 }
 
+@media only screen and (max-width: 720px) {
+	.slider-toggler{
+		display: none;
+	}
+}

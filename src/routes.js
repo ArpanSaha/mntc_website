@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Carousel from './components/carousel';
 import Header from './components/header';
-import Body from './components/body';
 import Footer from './components/footer';
 import Events from './components/events';
 import Team from './components/team';

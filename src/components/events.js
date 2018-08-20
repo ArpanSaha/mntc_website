@@ -45,7 +45,7 @@ class Event extends Component{
     }
     render(){
         AOS.init({
-            duration : 3000
+            duration : 1000
         }
         );
         let flagshipEvents=[

@@ -22,13 +22,13 @@ export default class extends React.Component {
             },
             {
                 'name': '4.jpg',
-                'caption': "Image 3"
+                'caption': "Integrating Moments"
             }
         ]
       return (
         <Carousel 
             autoplay="false" 
-            autoplayInterval="2000" 
+            autoplayInterval="4000" 
             wrapAround="true"
             renderCenterLeftControls={({ previousSlide }) => (
                 <i onClick={previousSlide} class="fa fa-chevron-left fa-2x"></i>

@@ -41,10 +41,16 @@
     color:white;
     font-size:24px;
     font-weight: 900;
+    text-decoration: overline;
     /* text-decoration-line: underline; */
     border-radius: 5px;
   }
 
+  /* .fullpage-event-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
   .click-more-events{
     padding-top:100%;
     position: relative;
@@ -77,4 +83,24 @@
     padding:20px 20px;
     padding-right: 10%;
     text-align: justify;
+  }
+
+  @media only screen and (max-width: 720px) {
+    .fullpage-event-toggler{
+      display: none;
+    }
+    .fullpage-event-content{
+      display: flex;
+      width:90%;
+      flex-direction: column;
+      margin: 10px auto;
+      padding: 0;
+      float: none;
+    }
+    .fullpage-event-desc{
+      text-align: center;
+    }
+    .fullpage-event-content > h1{
+      text-align: center;
+    }
   }
