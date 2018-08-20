@@ -86,7 +86,9 @@
 }
 .about-page-content{
     width:60%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
 }
 .carousel {

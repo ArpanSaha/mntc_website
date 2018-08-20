@@ -77,7 +77,7 @@ class FirstPage extends Component {
         let contents=[
             {
                 'title':'About Our College',
-                'content':'The National Institute of Technology, Durgapur (formerly Regional Engineering College, Durgapur), was established by an Act of Parliament in 1960 as one of the eight such colleges aimed to function as a pace setter for engineering education in the country and to foster national integration.It is a fully-funded premier Technological Institution of the Government of India and is administered by an autonomous Board of Governors. Somewhere near the modest dwelling of daily wage-earners and plodders, there lies a heaven in which resides the greatest minds of National Institute of Technology, Durgapur, the cradle of human intellect and knowledge, the confluence of various difficult times especially the naxalite uprising of 80\'s, NIT Durgapur has the steadfast support of its student and faculty, combined with infrastructure of institute facility. With precarious and careful laden mixture of youth and experience, old methods, new technologies, conventional stability and rebellious vivacity, NIT Durgapur poises to reach the pinnacle of glory and indeterminable heights of excellence.The never ending spirit and unquenchable thirst for knowledge that the institution stands for is symbolized in every success story of college. So come lets explore the spirits.'
+                'content':'The National Institute of Technology, Durgapur (formerly Regional Engineering College, Durgapur), was established by an Act of Parliament in 1960 as one of the eight such colleges aimed to function as a pace setter for engineering education in the country and to foster national integration.It is a fully-funded premier Technological Institution of the Government of India and is administered by an autonomous Board of Governors. Somewhere near the modest dwelling of daily wage-earners and plodders, there lies a heaven in which resides the greatest minds of National Institute of Technology, Durgapur, the cradle of human intellect and knowledge.'
             },
             {
                 'title':'Who are we ?',
@@ -108,6 +108,7 @@ class FirstPage extends Component {
                                     <div>
                                         <h1>{item.title}</h1>
                                         <p>{item.content}</p>
+                                        <hr/>
                                     </div>
                                 ))}
                         </div>
