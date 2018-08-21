@@ -107,10 +107,13 @@ class FirstPage extends Component {
                                 {contents.map((item, index) =>(
                                     <div>
                                         <h1>{item.title}</h1>
-                                        <p>{item.content}</p>
                                         <hr/>
+                                        <br/>
+                                        <p>{item.content}</p>
                                     </div>
                                 ))}
+                                <br/>
+                                <a href="/events" style={{'color':'#239ab4','font-size':'20px','textDecoration':'none'}}>Click here to know more ...</a>
                         </div>
                     </div>
                 </div>

@@ -52,4 +52,7 @@
 	.slider-toggler{
 		display: none;
 	}
+	.slider-image{
+		width: 100%;
+	}
 }

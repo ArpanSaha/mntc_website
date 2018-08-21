@@ -32,6 +32,15 @@
     text-align: center;
 }
 
+.social-icons img{
+    cursor: pointer !important;
+}
+
+.social-icons img:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
 hr {
     border: 0; height: 1px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }

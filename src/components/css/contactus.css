@@ -4,11 +4,25 @@
 }
 
 .contact-col{
-    width:300px;
+    width:50%;
     font-family: "Bree Serif";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.contactcard-holders{
+.contact-col-img{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-col-img > img {
+    width:100%;
+}
+.contactcrd-holders{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,7 +33,7 @@
     width:300px;
     height: 120px;
     margin: 10px 10px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.267);
     border-radius:5px;
     overflow: hidden;
     border-right: 10px solid #239ab4;
@@ -44,7 +58,7 @@
     padding:20px 10px;
     align-items: flex-start;
     font-size: 14px;
-    color: black;
+    color: #fff;
 }
 .contactinfo > .post{
     font-size: 16px;

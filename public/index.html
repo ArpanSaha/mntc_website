@@ -8,9 +8,9 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
 
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
@@ -20,6 +20,20 @@
     <link rel="stylesheet" href="./aos-master/dist/aos.css">  
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <script>
+        $(document).ready(function() {
+          //Preloader
+          console.log("Hello");
+          $(window).on("load", function() {
+            preloaderFadeOutTime = 500;
+            function hidePreloader() {
+              var preloader = $('.bar');
+              preloader.fadeOut(preloaderFadeOutTime);
+          }
+          hidePreloader();
+          });
+        });
+   </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -35,6 +49,11 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <div class="bar">
+        <img src="./assets/loader.gif"/>
+    </div>
     <div id="root"></div>
+
   </body>
+
 </html>

@@ -218,7 +218,108 @@ class Team extends Component {
                 'name':'Vijaya Bhuvanagiri',
                 'src': 'vijaya',
                 'year': 'third'
-            }
+            },
+            {
+                'name':'Abhas Gorain',
+                'src': 'abhas',
+                'year': 'third'
+            },
+            {
+                'name':'Adrish Bir',
+                'src': 'adrish',
+                'year': 'third'
+            },
+            {
+                'name':'Anshul Thakur',
+                'src': 'anshul',
+                'year': 'third'
+            },
+            {
+                'name':'Avinash Boppudi',
+                'src': 'avinash',
+                'year': 'third'
+            },
+            {
+                'name':'Brijesh',
+                'src': 'brijesh',
+                'year': 'third'
+            },
+            {
+                'name':'Dishant Bole',
+                'src': 'dishant',
+                'year': 'third'
+            },
+            {
+                'name':'Geeta Madhuri',
+                'src': 'geeta',
+                'year': 'third'
+            },
+            {
+                'name':'Hariharan',
+                'src': 'hariharan',
+                'year': 'third'
+            },
+            {
+                'name':'Kuldeep Jangid',
+                'src': 'kuldeep',
+                'year': 'third'
+            },
+            {
+                'name':'Nikhil Murarka',
+                'src': 'nikhil',
+                'year': 'third'
+            },
+            {
+                'name':'Piyush Jain',
+                'src': 'piyush',
+                'year': 'third'
+            },
+            {
+                'name':'Samriddhi Gupta',
+                'src': 'samriddhi',
+                'year': 'third'
+            },
+            {
+                'name':'Satantra Tiwari',
+                'src': 'satantra',
+                'year': 'third'
+            },
+            {
+                'name':'Sayanti Dey',
+                'src': 'sayanti',
+                'year': 'third'
+            },
+            {
+                'name':'Shankar Ray',
+                'src': 'shankar',
+                'year': 'third'
+            },
+            {
+                'name':'Souman Pani',
+                'src': 'souman',
+                'year': 'third'
+            },
+            {
+                'name':'Subhranshu Mohanty',
+                'src': 'subhranshu',
+                'year': 'third'
+            },
+            {
+                'name':'Tamal Choudhury',
+                'src': 'tamal',
+                'year': 'third'
+            },
+            {
+                'name':'Tanmoy Ghosh',
+                'src': 'tanmoy',
+                'year': 'third'
+            },
+            {
+                'name':'Vijaya Bhuvanagiri',
+                'src': 'vijaya',
+                'year': 'third'
+            },
+
         ]
         AOS.init({
             duration : 2000
@@ -227,6 +328,8 @@ class Team extends Component {
             <div className='site-body'>
                 <h1>Our Team</h1>
                 <hr/>
+                <br/>
+                <p className="quote">"Alone we can do so little, together we can do so much."</p>
                 <ul className="team-toggle">
                         {this.menu.map((menu, index) => (
                             <li className={ (menu.value === this.state.active_menu) ? "active" : null}>

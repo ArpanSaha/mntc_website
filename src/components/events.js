@@ -40,12 +40,17 @@ class Event extends Component{
             {
                 'name' : 'Terrorist Takedown',
                 'value' : 'terrorist_takedown'
+            },
+            {
+                'name' : 'TIME scholarship Test',
+                'value' : 'time'
             }
         ]
     }
     render(){
         AOS.init({
-            duration : 1000
+            duration : 2000,
+            once : true
         }
         );
         let flagshipEvents=[
@@ -66,13 +71,20 @@ class Event extends Component{
                 'desc':'Ansible is a free software tool that allows you to configure and manage nodes. This is achieved by creating groups of machines and describing which actions should be taken on them. The required commands for this are issued from a central location. It has various built-in modules to allow easy configuration management. It uses SSH to connect to different nodes and hence nothing needs to be installed on the targeted machines. Ansible only runs on the main control machine which runs the commands.',
                 'src':'/assets/4.jpg',
                 'value' : 'terrorist_takedown'
+            },
+            {
+                'name' : 'TIME scholarship Test',
+                'desc':'Ansible is a free software tool that allows you to configure and manage nodes. This is achieved by creating groups of machines and describing which actions should be taken on them. The required commands for this are issued from a central location. It has various built-in modules to allow easy configuration management. It uses SSH to connect to different nodes and hence nothing needs to be installed on the targeted machines. Ansible only runs on the main control machine which runs the commands.',
+                'src':'/assets/4.jpg',
+                'value' : 'time'   
             }
         ]
         return(
             <div className="site-body-full" >
                 <div className="fullpage-event-toggler">
                     <ul>
-                    <h2>Flagship Events</h2>    
+                    <h2>Flagship Events</h2>   
+                    <br/> 
                     {this.eventToggle.map((item, index)=>(
                         <li>
                             <a href="" className={(item.value === this.state.active_event)?'active':null} key={index} onClick={(e)=>{e.preventDefault(); this.handleScrollEvent(item.value);}}>{item.name}</a>
