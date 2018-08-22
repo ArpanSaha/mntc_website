@@ -29,28 +29,7 @@ class Slider extends Component {
         clearInterval(this.myInterval);
     }
     componentWillMount(){
-        this.slideImages=[
-            {
-                'id' : 'id1',
-                'src' : 'http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg'
-            },
-            {
-                'id' : 'id2',
-                'src' : 'http://thecodeplayer.com/uploads/media/40Ly3VB.jpg'
-            },
-            {
-                'id' : 'id3',
-                'src' : 'http://thecodeplayer.com/uploads/media/00kih8g.jpg'
-            },
-            {
-                'id' : 'id4',
-                'src' : 'http://thecodeplayer.com/uploads/media/2rT2vdx.jpg'
-            },
-            {
-                'id' : 'id5',
-                'src' : 'http://thecodeplayer.com/uploads/media/8k3N3EL.jpg'
-            }
-        ]
+        this.slideImages=this.props.images;
     }
     render(){
         return (

@@ -12,28 +12,32 @@ class ContactUs extends Component{
                 'post':'President',
                 'email':'punit.123@gmail.com',
                 'phone':'987543210',
-                'src':'punit'
+                'src':'punit',
+                'fb' : 'https://www.facebook.com/punit.drolia'
             },
             {
                 'name':'Sahil Jaiswal',
                 'post':'Convenor',
                 'email':'sahil.123@gmail.com',
                 'phone':'987543210',
-                'src':'sahil'
+                'src':'sahil',
+                'fb' : 'https://www.facebook.com/sahil.jaiswal.7399'
             },
             {
                 'name':'Sudipto Mukherjee',
                 'post':'Treasurer',
                 'email':'sudipto.123@gmail.com',
                 'phone':'987543210',
-                'src':'sudipto'
+                'src':'sudipto',
+                'fb' :'https://www.facebook.com/msudipto9'
             },
             {
                 'name':'Nidhi Kumar Yadav',
                 'post':'General Secretary',
                 'email':'nidhi.123@gmail.com',
                 'phone':'987543210',
-                'src':'nidhi'
+                'src':'nidhi',
+                'fb': 'https://www.facebook.com/nidhi.yadav.18294053',
             }
         ]
         return (
@@ -53,6 +57,10 @@ class ContactUs extends Component{
                                         <p className="post">{item.post}</p>
                                         <p>{item.phone}</p>
                                         <p>{item.email}</p>
+                                    </div>
+                                    <div className="contactlink">
+                                        <a href={item.fb}><i className="fa fa-facebook-square" aria-hidden="true" style={{"fontSize":"28px","padding":"5px"}}></i></a>
+                                        <a href=""><i className="fa fa-google-plus-square" aria-hidden="true" style={{"fontSize":"28px","padding":"5px"}}></i></a>
                                     </div>
                                 </div>
                             ))}

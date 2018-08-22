@@ -30,13 +30,13 @@
 }
 .contactcard{
     display: flex;
-    width:300px;
+    width:340px;
     height: 120px;
     margin: 10px 10px;
     background-color: rgba(0, 0, 0, 0.267);
     border-radius:5px;
     overflow: hidden;
-    border-right: 10px solid #239ab4;
+    /* border-right: 10px solid #239ab4; */
     box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.9);
 }
 
@@ -60,7 +60,31 @@
     font-size: 14px;
     color: #fff;
 }
+.contactlink{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #239ab4;
+}
+.contactlink > a{
+    color: #fff;
+}
+.contactlink > a:hover{
+    transform: scale(1.1);
+}
+
 .contactinfo > .post{
     font-size: 16px;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 720px) {
+    .contact-col{
+        width:100%;
+    }
+    .contact-page{
+        flex-direction: column-reverse;
+    }
+  }

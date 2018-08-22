@@ -1,10 +1,10 @@
 import React,{ Component } from 'react';
 import './css/footer.css';
 import logo from '../static/images/mntc.png';
-import facebook from '../static/images/facebook.png';
-import youtube from '../static/images/youtube.png';
-import instagram from '../static/images/instagram.png';
-import gmail from '../static/images/google-plus.png';
+// import facebook from '../static/images/facebook.png';
+// import youtube from '../static/images/youtube.png';
+// import instagram from '../static/images/instagram.png';
+// import gmail from '../static/images/google-plus.png';
 
 class Footer extends Component{
     constructor(props){
@@ -16,23 +16,19 @@ class Footer extends Component{
     render(){
         var socialSites=[
             {
-                'loc': facebook,
                 'name':'facebook',
-                'address':''
+                'address':'https://www.facebook.com/mathsntechclub/'
             },
             {
-                'loc':youtube,
                 'name':'youtube',
-                'address':''
+                'address':'https://www.youtube.com/channel/UCQMKQOji7qul1pwDpkeOa8A'
             },
             {
-                'loc':instagram,
                 'name':'instagram',
                 'address':''
             },
             {
-                'loc':gmail,
-                'name':'gmail',
+                'name':'google-plus',
                 'address':''
             }
         ]
@@ -47,7 +43,7 @@ class Footer extends Component{
                         {socialSites.map((items, index) =>(
                             <div className='icon' key={index} >
                                 <a href={items.address} title={items.name}>
-                                    <img src={items.loc} style={{'fill':'white'}} />
+                                    <i className={"fa fa-"+items.name} style={{'fill':'white','fontSize':'28px'}} />
                                 </a>
                             </div>
                         ))}
