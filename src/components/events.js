@@ -4,6 +4,7 @@ import './css/events.css';
 import Slider from './slider';
 import AOS from 'aos';
 import $ from 'jquery';
+import { withRouter, Link } from 'react-router-dom';
 
 class Event extends Component{
     constructor(props){
@@ -58,19 +59,19 @@ class Event extends Component{
             {
                 'name':'Ankshala',
                 'desc':'Ankshala is an aptitude test conducted in various schools in and around Durgapur,Asansol,Burdwan and Bankura.This is done to install a sense of competitiveness and to see the problem solving abilities among the students.The top students meet for the final clash at NIT Durgapur.',
-                'src':[{'src':'/assets/events/ankshala/bidhan.jpg'},{'src':'/assets/events/ankshala/guruteg.jpg'},{'src':'/assets/events/ankshala/hemsheela.jpg'},{'src':'/assets/events/ankshala/kvcmeri.jpg'},{'src':'/assets/events/ankshala/peters.jpg'},{'src':'/assets/events/ankshala/xaviers.jpg'}],
+                'src':[{'src':'./assets/events/ankshala/bidhan.jpg'},{'src':'./assets/events/ankshala/guruteg.jpg'},{'src':'./assets/events/ankshala/hemsheela.jpg'},{'src':'./assets/events/ankshala/kvcmeri.jpg'},{'src':'./assets/events/ankshala/peters.jpg'},{'src':'./assets/events/ankshala/xaviers.jpg'}],
                 'value' : 'ankshala'
             },
             {
                 'name':'Knock Knock',
                 'desc':'This is a series of aptitude questions based on various concepts of logical problems.These are to check the IQ and also show a miniature version of various competitive exams and interview questions. The person who solves in least time and with most correct answers is declared the winner of that week.',
-                'src':[{'src':'/assets/events/knockknock/paper1.jpg'},{'src':'/assets/events/knockknock/paper2.jpg'}],
+                'src':[{'src':'./assets/events/knockknock/paper1.jpg'},{'src':'./assets/events/knockknock/paper2.jpg'}],
                 'value' : 'knock_knock'
             },
             {
                 'name':'Terrorist Takedown',
                 'desc':'It is a test of both speed and skill, as the race is not just within the mind, but extends to the physical world where the team is required to hunt for clues, decipher the coded message and reach successive checkpoints.',
-                'src':[{'src':'/assets/events/tt/tt.jpg'},{'src':'/assets/events/tt/1.jpg'},{'src':'/assets/events/tt/2.jpg'},{'src':'/assets/events/tt/3.jpg'},{'src':'/assets/events/tt/4.jpg'}],
+                'src':[{'src':'./assets/events/tt/tt.jpg'},{'src':'./assets/events/tt/1.jpg'},{'src':'./assets/events/tt/2.jpg'},{'src':'./assets/events/tt/3.jpg'},{'src':'./assets/events/tt/4.jpg'}],
                 'value' : 'terrorist_takedown'
             }
             // ,
@@ -94,7 +95,7 @@ class Event extends Component{
                     ))}
                     </ul>
                     <div className="click-more-events">
-                        <a href='/aavishkar'><h2>Click here for more events during fest</h2></a>
+                        <Link to='/aavishkar'><h2>Click here for more events during fest</h2></Link>
                     </div>
                 </div>
                 {flagshipEvents.map((item, index)=>(

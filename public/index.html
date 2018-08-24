@@ -21,20 +21,6 @@
     <link rel="stylesheet" href="./aos-master/dist/aos.css">  
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <script>
-        $(document).ready(function() {
-          //Preloader
-          console.log("Hello");
-          $(window).on("load", function() {
-            preloaderFadeOutTime = 500;
-            function hidePreloader() {
-              var preloader = $('.bar');
-              preloader.fadeOut(preloaderFadeOutTime);
-          }
-          hidePreloader();
-          });
-        });
-   </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -50,9 +36,9 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div class="bar">
+    <!-- <div class="bar">
         <img src="./assets/loader.gif"/>
-    </div>
+    </div> -->
     <div id="root"></div>
 
   </body>

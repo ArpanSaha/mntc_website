@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import './css/firstpage.css';
 import './css/header.css';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import logo from '../static/images/mntc.png';
 import about from '../static/images/about-01.svg';
 import Carousel from './carousel';
@@ -103,7 +103,7 @@ class FirstPage extends Component {
                         <div  data-aos="flip-right" className='about-page-image'>
                             <img src={about} />
                         </div>
-                        <div data-aos="fade-left" className='about-page-content'>
+                        <div data-aos="fade-lefimport { Link } from 'react-router-dom't" className='about-page-content'>
                                 {contents.map((item, index) =>(
                                     <div>
                                         <h1>{item.title}</h1>
@@ -113,7 +113,7 @@ class FirstPage extends Component {
                                     </div>
                                 ))}
                                 <br/>
-                                <a href="/events" style={{'color':'#239ab4','font-size':'20px','textDecoration':'none'}}>Click here to know more ...</a>
+                                <Link to="/events" style={{'color':'#239ab4','font-size':'20px','textDecoration':'none'}}>Click here to know more ...</Link>
                         </div>
                     </div>
                 </div>
