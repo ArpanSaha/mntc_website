@@ -31,10 +31,10 @@ export default class extends React.Component {
             autoplayInterval="4000" 
             wrapAround="true"
             renderCenterLeftControls={({ previousSlide }) => (
-                <i onClick={previousSlide} class="fa fa-chevron-left fa-2x"></i>
+                <i onClick={previousSlide} className="fa fa-chevron-left fa-2x"></i>
             )}
             renderCenterRightControls={({ nextSlide }) => (
-                <i onClick={nextSlide} class="fa fa-chevron-right fa-2x"></i>
+                <i onClick={nextSlide} className="fa fa-chevron-right fa-2x"></i>
             )}
         >
             {carouselItems.map((item, index) => (
@@ -43,9 +43,10 @@ export default class extends React.Component {
                         <img src={"assets/" + item.name} />
                     </div>
                     <div className="black-wrapper">
-                        
                         <div className="image-desc-container">
                             <p>{item.caption}</p>
+                            <i className="fa fa-angle-double-down" style={{'cursor':'auto'}}></i>
+                            
                         </div>
                         <Particles 
                             params={{

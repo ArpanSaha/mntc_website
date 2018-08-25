@@ -43,15 +43,23 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script>
+          window.addEventListener("load", function(event) {
+            var element = document.getElementById("preloader");
+            element.parentNode.removeChild(element);
+            $('body').removeClass('preloader-active');
+            $('#preloader').fadeOut(1000);
+          });
+    </script>
     <title>React App</title>
   </head>
-  <body>
+  <body class="preloader-active">
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <!-- <div class="bar">
-        <img src="./assets/loader.gif"/>
-    </div> -->
+      <div id="preloader">
+        <img src="./assets/loader.gif" />
+      </div>
     <div id="root"></div>
 
   </body>

@@ -85,6 +85,10 @@
     text-align: justify;
   }
 
+  .header-sm-screen{
+    display: none;
+  }
+  
   @media only screen and (max-width: 720px) {
     .fullpage-event-toggler{
       display: none;
@@ -102,5 +106,8 @@
     }
     .fullpage-event-content > h1{
       text-align: center;
+    }
+    .header-sm-screen{
+      display: block;
     }
   }

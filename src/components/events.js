@@ -98,6 +98,10 @@ class Event extends Component{
                         <Link to='/aavishkar'><h2>Click here for more events during fest</h2></Link>
                     </div>
                 </div>
+                <div className='header-sm-screen'>
+                    <h1>Flagship Events</h1>
+                    <hr/>
+                </div>
                 {flagshipEvents.map((item, index)=>(
                     <div data-aos="fade-in" className="fullpage-event-content" key={index} id={item.value}>
                         <h1>{item.name}</h1>
