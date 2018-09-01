@@ -48,7 +48,7 @@ class Aavishkar extends Component{
                 'name': 'Clash Of Titans',
                 'shortdesc': 'The Aavishkar Championship',
                 'type': ['title'],
-                'src' : './assets/events/cos.jpg',
+                'src' : './assets/events/cot.jpg',
                 'desc' : 'It is a relay race ride where the winners of each event need to overcome the obstacles to cross the finish line.'
             },
             {
@@ -76,6 +76,7 @@ class Aavishkar extends Component{
                 'name': 'Simplex',
                 'shortdesc': 'Unleash the coder in you',
                 'type': ['coding'],
+                'src' : './assets/events/mt.jpg',
                 'desc' : 'Simplex is an onsite programming event which is maths at one end and algorithmic programming at the other. Though various programming methodologies may lead to correct solution, but a slight mathematical approach can make your solution quicker and elegant. '
             },
             {

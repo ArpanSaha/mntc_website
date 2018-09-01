@@ -61,7 +61,7 @@ class Team extends Component {
             },
             {
                 'name':'Afaque Alam',
-                'post':'Ankshala Head & ',
+                'post':'Ankshala Head & Co-Convener',
                 'src': 'afaque',
                 'year': 'fourth'
             },
@@ -219,6 +219,106 @@ class Team extends Component {
                 'src': 'vijaya',
                 'year': 'third'
             },
+            {
+                'name':'Aadarsh Shaw',
+                'src': 'aadarsh',
+                'year': 'second'
+            },
+            {
+                'name':'Abhinav Prakash',
+                'src': 'abhinav',
+                'year': 'second'
+            },
+            {
+                'name':'Ambica Agarwal',
+                'src': 'ambica',
+                'year': 'second'
+            },
+            {
+                'name':'Anshul Chouhan',
+                'src': 'anshulc',
+                'year': 'second'
+            },
+            {
+                'name':'Arpan Saha',
+                'src': 'arpan',
+                'year': 'second'
+            },
+            {
+                'name':'B Padmini',
+                'src': 'padmini',
+                'year': 'second'
+            },
+            {
+                'name':'G.Bhanu Teja',
+                'src': 'gbhanu',
+                'year': 'second'
+            },
+            {
+                'name':'Jayant Mishra',
+                'src': 'jayant',
+                'year': 'second'
+            },
+            {
+                'name':'Koushik Ghosh',
+                'src': 'koushik',
+                'year': 'second'
+            },
+            {
+                'name':'Manish Awasthi',
+                'src': 'manish',
+                'year': 'second'
+            },
+            {
+                'name':'Manisha Bhosley',
+                'src': 'manisha',
+                'year': 'second'
+            },
+            {
+                'name':'Prachi Sharma',
+                'src': 'prachi',
+                'year': 'second'
+            },
+            {
+                'name':'Riddhiman Sanyal',
+                'src': 'riddhiman',
+                'year': 'second'
+            },
+            {
+                'name':'Rishav Dutta',
+                'src': 'rishav',
+                'year': 'second'
+            },
+            {
+                'name':'Saddam Ansari',
+                'src': 'saddam',
+                'year': 'second'
+            },
+            {
+                'name':'Sai Kotesh K',
+                'src': 'kotesh',
+                'year': 'second'
+            },
+            {
+                'name':'Sangram Mukherjee',
+                'src': 'sangram',
+                'year': 'second'
+            },
+            {
+                'name':'Shamik Choudhury',
+                'src': 'shamik',
+                'year': 'second'
+            },
+            {
+                'name':'S.K. Praliya',
+                'src': 'praliya',
+                'year': 'second'
+            },
+            {
+                'name':'Washim Raza',
+                'src': 'washim',
+                'year': 'second'
+            }
         ]
         AOS.init({
             duration : 2000
