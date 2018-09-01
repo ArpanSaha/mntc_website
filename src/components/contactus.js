@@ -10,32 +10,32 @@ class ContactUs extends Component{
             {
                 'name':'Punit Drolia',
                 'post':'President',
-                'email':'punit.123@gmail.com',
-                'phone':'987543210',
+                'email':'punitdrolia1995@gmail.com',
+                'phone':'8967945051',
                 'src':'punit',
                 'fb' : 'https://www.facebook.com/punit.drolia'
             },
             {
                 'name':'Sahil Jaiswal',
                 'post':'Convenor',
-                'email':'sahil.123@gmail.com',
-                'phone':'987543210',
+                'email':'sahil131196@gmail.com',
+                'phone':'9836286146 ',
                 'src':'sahil',
                 'fb' : 'https://www.facebook.com/sahil.jaiswal.7399'
             },
             {
                 'name':'Sudipto Mukherjee',
                 'post':'Treasurer',
-                'email':'sudipto.123@gmail.com',
-                'phone':'987543210',
+                'email':'msudipto7@gmail.com',
+                'phone':'8158892279',
                 'src':'sudipto',
                 'fb' :'https://www.facebook.com/msudipto9'
             },
             {
                 'name':'Nidhi Kumar Yadav',
                 'post':'General Secretary',
-                'email':'nidhi.123@gmail.com',
-                'phone':'987543210',
+                'email':'nidhi.sagar.yadav@gmail.com',
+                'phone':'7679883025',
                 'src':'nidhi',
                 'fb': 'https://www.facebook.com/nidhi.yadav.18294053',
             }

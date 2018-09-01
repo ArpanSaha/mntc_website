@@ -17,11 +17,11 @@ export default class extends React.Component {
                 'caption': "Digging the Digits"
             },
             {
-                'name': '2.jpg',
+                'name': 'is.jpg',
                 'caption': "Instilling rational and logical thinking in inquisitive minds."
             },
             {
-                'name': '4.jpg',
+                'name': 'im.JPG',
                 'caption': "Integrating Moments"
             }
         ]

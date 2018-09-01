@@ -22,14 +22,6 @@ class Footer extends Component{
             {
                 'name':'youtube',
                 'address':'https://www.youtube.com/channel/UCQMKQOji7qul1pwDpkeOa8A'
-            },
-            {
-                'name':'instagram',
-                'address':''
-            },
-            {
-                'name':'google-plus',
-                'address':''
             }
         ]
         return(
