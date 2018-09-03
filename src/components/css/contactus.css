@@ -30,7 +30,7 @@
 }
 .contactcard{
     display: flex;
-    width:340px;
+    width: 340px;
     height: 120px;
     margin: 10px 10px;
     background-color: rgba(0, 0, 0, 0.267);
@@ -41,7 +41,7 @@
 }
 
 .contactphoto{
-    width:130px;
+    width:100px;
     display: flex;
     transform-origin: bottom left;
     align-items: center;
@@ -52,7 +52,7 @@
     width: auto;
 }
 .contactinfo{
-    width: 170px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     padding:20px 10px;
@@ -87,4 +87,9 @@
     .contact-page{
         flex-direction: column-reverse;
     }
+    .contactcard{
+        transform: scale(0.8);
+        margin: 0;
+    }
+
   }
