@@ -9,7 +9,7 @@ import AOS from 'aos'
 import $ from 'jquery'
 import Footer from './footer';
 import Header from './header';
-import Popup from 'react-popup';
+
 
 class FirstPage extends Component {
     constructor(props) {

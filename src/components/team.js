@@ -22,7 +22,7 @@ class Team extends Component {
                 'value': "third"
             },
             {
-                'name': "Fest Coordinators",
+                'name': "Junior Fest Coordinators",
                 'value': "second"
             }
         ]
@@ -115,7 +115,7 @@ class Team extends Component {
             },
             {
                 'name':'R. Likhith',
-                'post':'',
+                'post':'Logistic Head',
                 'src': 'likhith',
                 'year': 'fourth'
             },

@@ -14,7 +14,7 @@ class Anveshan extends Component{
                     </div>
                     <div className="anveshan-content">
                         <p>
-                        Hey folks, Maths and Tech Club is here again presenting you an amazing opportunity to get your article featured in the 7th edition of the Anveshan,the Technical Magazine of NIT DURGAPUR. Anveshan is all set to create the " technical buzz " through your entries in the form of 
+                        Maths and Tech Club is here again presenting you an amazing opportunity to get your article featured in the 7th edition of the Anveshan,the Technical Magazine of NIT DURGAPUR. Anveshan is all set to create the " technical buzz " through your entries in the form of 
                         <br/>
                         <br/><b>Tech-related articles</b>, 
                         <br/><b>Tech-memes,</b>
